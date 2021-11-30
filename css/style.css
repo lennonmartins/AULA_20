@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer';
+}
+
+header{
+    background-color: rgb(199, 188, 188);
+    grid-area: header;
+    height: 60px;
+}
+
+main{
+    flex-direction: column;
+    height: 575px;
+    grid-area: main;
+    display: flex;
+    margin: 25px 5px 15px 45px;
+    
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+div.container{
+    background-color:rgb(199, 188, 188);
+    width: 900px;
+    height: 500px;
+}
+
+.cabecalho{
+    height: 30px;
+}
+
+.titulo{
+    gap: 2px;
+    padding: 10px;
+}
+
+.elemento{
+    width: 250px;
+    height: 125px;
+    background-color:rgb(199, 188, 188);
+    margin: 25px 0px 0PX 0PX;;
+}
+
+.teste{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
